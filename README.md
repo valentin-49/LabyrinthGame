@@ -2,6 +2,10 @@
 
 Jeu indé de labyrinthe.
 
+Le principe du jeu est de voir une IA evoluer dans un labyrinthe. 
+
+Le joueur pourra choisir de jouer sur des labyrinthes deja existants ou bien de créer ses propres labyrinthes pour y tester l'intelligence de L'IA et ses limites 
+
 Pygame
 ============
 
