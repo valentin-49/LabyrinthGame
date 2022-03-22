@@ -12,4 +12,3 @@ Pygame
 
      http://www.pygame.org
 
-============
