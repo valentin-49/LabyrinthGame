@@ -1,10 +1,8 @@
 # LabyrinthGame
+
 Jeu indé de labyrinthe.
 
-
-#Pygame 
-
-About pygame
+Pygame
 ============
 
      Pygame is a cross-platfrom library designed to make it easy to
