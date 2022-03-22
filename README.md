@@ -15,6 +15,8 @@ Pygame
      also make use of several other popular libraries.
 
      http://www.pygame.org
+     
+     pip install pygame
 
 Numpy 
 ==========
@@ -27,3 +29,5 @@ Numpy
      random simulation and much more.
      
      https://numpy.org/doc/stable/
+     
+     pip install numpy
