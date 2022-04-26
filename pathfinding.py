@@ -2,9 +2,11 @@ import pygame
 import math
 from queue import PriorityQueue
 
-WIDTH = 600
+WIDTH = 800
 WIN = pygame.display.set_mode((WIDTH, WIDTH))
 pygame.display.set_caption("A* Pathfinding")
+
+background_image = pygame.image.load('img/Background/background_color_violet.png').convert_alpha()
 
 RED = (255,0,0) #is closed
 GREEN = (0,255,0) #is open
@@ -172,7 +174,7 @@ def get_clicked_pos(pos, rows, width):
     return row, col
 
 def main(win, width):
-    ROWS = 50
+    ROWS = 25
     grid = make_grid(ROWS, width)
     start = None
     end = None
