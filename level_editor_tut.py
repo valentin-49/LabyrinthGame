@@ -1,7 +1,7 @@
 import pygame
 import button
 import csv
-import pickle
+
 
 pygame.init()
 
@@ -100,7 +100,7 @@ def draw_world():
 #créations boutons
 save_button = button.Button(SCREEN_WIDTH // 2, SCREEN_HEIGHT + LOWER_MARGIN - 50, save_img, 1)
 load_button = button.Button(SCREEN_WIDTH // 2 + 200, SCREEN_HEIGHT + LOWER_MARGIN - 50, load_img, 1)
-#make a button list
+#boutons liste
 button_list = []
 button_col = 0
 button_row = 0
@@ -122,8 +122,8 @@ while run:
 	draw_grid()
 	draw_world()
 
-	draw_text(f'Level: {level}', font, WHITE, 10, SCREEN_HEIGHT + LOWER_MARGIN - 90)
-	#########################################################draw_text('FLECHE HAUT ET BAS POUR CHANGER DE LEVEL', font, WHITE, 10, SCREEN_HEIGHT + LOWER_MARGIN - 60)
+	draw_text(f'Level: {level}', font, WHITE, 10, SCREEN_HEIGHT + LOWER_MARGIN - 120)
+	draw_text('Pressez UP ou DOWN pour changer de level', font, WHITE, 10, SCREEN_HEIGHT + LOWER_MARGIN - 90)
 
 	#save and load data
 	if save_button.draw(screen):
@@ -145,14 +145,12 @@ while run:
 			for x, row in enumerate(reader):
 				for y, tile in enumerate(row):
 					world_data[x][y] = int(tile)
-		#alternative pickle method
-		#world_data = []
-		#pickle_in = open(f'level{level}_data', 'rb')
-		#world_data = pickle.load(pickle_in)
+
+
 				
 
 	#panel tuiles
-	pygame.draw.rect(screen, side_bar, (SCREEN_WIDTH, 0, SIDE_MARGIN, 645))
+	pygame.draw.rect(screen, side_bar, (SCREEN_WIDTH, 0, SIDE_MARGIN, 641))
 
 	#selection tuile
 	button_count = 0
