@@ -7,7 +7,7 @@ from pygame.constants import QUIT, K_ESCAPE, KEYDOWN, MOUSEBUTTONDOWN, MOUSEBUTT
 import pygame.sprite as spriteclass
 
 
-SCREEN_SIZE = (1200, 768)
+SCREEN_SIZE = (920, 760)
 os.environ['SDL_VIDEO_CENTERED'] = '1'
 
 
